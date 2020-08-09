@@ -1,0 +1,99 @@
+#page-singin-content {
+  background: #e5e5e6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "logo-page login"
+  ;
+  align-content: center;
+  justify-items: center;
+}
+
+#page-singin-content .logoItem-container {
+  grid-area: logo-page;
+}
+
+#page-singin-content .form-container {
+  grid-area: login;
+  width: 100%;
+  max-width: 40rem;
+  margin-top: 26rem;
+}
+
+.form-container fieldset {
+  border: 0;
+}
+
+.form-container fieldset legend {
+  font: 600 3.6rem Poppins;
+  color: var(--color-text-title);
+  margin-bottom: 4rem;
+}
+
+.input-block {
+  position: relative;
+}
+
+.input-block-login input {
+  width: 100%;
+  height: 7.2rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  padding: 0 2.4rem;
+  font: 1.6rem Poppins;
+}
+
+.input-block-password input {
+  width: 100%;
+  height: 7.2rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  padding: 0 2.4rem;
+  font: 1.6rem Poppins;
+}
+
+.login-auxiliars {
+  display: flex;
+  margin: 2.4rem 0 4rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-auxiliars .remember-block .input{
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid var(--color-line-in-white);
+  box-sizing: border-box;
+  border-radius: 0.8rem;
+}
+
+input[type="checkbox"]:checked::after {
+  background: var(--color-secundary);
+}
+
+.login-auxiliars .remember-block label{
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-left: 1rem;
+}
+
+.form-container button {
+  height: 5.6rem;
+  width: 100%;
+  background: var(--color-button-base);
+  border: 0;
+  margin-bottom: 12.8rem;
+}
+
+.form-container .singup-linking {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+

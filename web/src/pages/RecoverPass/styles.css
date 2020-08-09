@@ -1,0 +1,73 @@
+#page-recover-content {
+  background: #e5e5e6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "register logo-page"
+  ;
+  align-items: center;
+  justify-items: center;
+}
+
+#page-recover-content .logoItem-container {
+  grid-area: logo-page;
+}
+
+#page-recover-content .form-container {
+  grid-area: register;
+  width: 100%;
+  max-width: 45rem;
+  margin-top: 0rem;
+}
+
+.form-container fieldset {
+  border: 0;
+}
+
+.form-container header {
+  position: absolute;
+  top: 2.7rem;
+}
+
+.form-container fieldset legend {
+  font: 600 3.6rem Poppins;
+  color: var(--color-text-title);
+  margin-bottom: 1.2rem;
+  max-width: 27rem;
+}
+
+.form-container fieldset p {
+  font: 400 1.6rem Poppins;
+  color: var(--color-text-base);
+  margin-bottom: 4rem;
+  max-width: 33rem;
+}
+
+.input-block input {
+  width: 100%;
+  height: 7.2rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  border-radius: 0.8rem;
+  outline: 0;
+  padding: 0 2.4rem;
+  font: 1.6rem Poppins;
+}
+
+.form-container form button {
+  height: 5.6rem;
+  width: 100%;
+  background: var(--color-button-base);
+  border: 0;
+  border-radius: 0.8rem;
+  margin-top: 2.4rem;
+  color: var(--color-text-complement);
+  font-weight: 600;
+  font: 600 1.6rem Archivo;
+  line-height: 2.6rem;
+}
+
+
+
+
+
