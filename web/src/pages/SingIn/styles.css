@@ -9,32 +9,28 @@
   justify-items: center;
 }
 
-#page-singin-content .logoItem-container {
+#page-singin-content .logo-page-content {
   grid-area: logo-page;
 }
 
-#page-singin-content .form-container {
+#page-singin-content .form-page-content {
   grid-area: login;
   width: 100%;
   max-width: 40rem;
   margin-top: 26rem;
 }
 
-.form-container fieldset {
+#page-singin-content .form-page-content fieldset {
   border: 0;
 }
 
-.form-container fieldset legend {
+#page-singin-content .form-page-content fieldset legend {
   font: 600 3.6rem Poppins;
   color: var(--color-text-title);
   margin-bottom: 4rem;
 }
 
-.input-block {
-  position: relative;
-}
-
-.input-block-login input {
+#page-singin-content .input-email input {
   width: 100%;
   height: 7.2rem;
   border-radius: 0.8rem 0.8rem 0 0;
@@ -45,54 +41,153 @@
   font: 1.6rem Poppins;
 }
 
-.input-block-password input {
+#page-singin-content .input-password {
+  display: flex;
+}
+
+#page-singin-content .input-password input {
   width: 100%;
   height: 7.2rem;
-  border-radius: 0 0 0.8rem 0.8rem;
+  border-radius: 0 0 0 0.8rem;
   background: var(--color-input-background);
   border: 1px solid var(--color-line-in-white);
+  border-right: 0 !important;
   outline: 0;
   padding: 0 2.4rem;
   font: 1.6rem Poppins;
 }
 
-.login-auxiliars {
+#page-singin-content .input-password > button {
+  width: 20%;
+  height: 7.2rem;
+  border-radius:0 0.8rem 0.8rem 0;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  border-left: 0 !important;
+  outline: 0;
+  padding: 0 2.4rem;
+  font: 1.6rem Poppins;
+  cursor: text;
+}
+
+#page-singin-content .input-password > button >img {
+  display: flex;
+  cursor: pointer;
+}
+
+#page-singin-content .login-helper {
   display: flex;
   margin: 2.4rem 0 4rem 0;
   justify-content: space-between;
   align-items: center;
 }
 
-.login-auxiliars .remember-block .input{
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 1px solid var(--color-line-in-white);
-  box-sizing: border-box;
-  border-radius: 0.8rem;
+.check-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 2rem;
+  font-size: 2.2rem;
+}
+ 
+.check-container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
-input[type="checkbox"]:checked::after {
+.check{
+  left: 0;
+  top: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--color-box-footer);
+  border-radius: 0.8rem;
+  position: absolute;
+}
+
+.check-container input:checked  ~ .check{
   background: var(--color-secundary);
 }
 
-.login-auxiliars .remember-block label{
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  margin-left: 1rem;
+.check-container .check::after{
+  top: 0.45rem;
+  left: 0.9rem;
+  width: 0.4rem;
+  height: 0.8rem;
+  border: solid var(--color-box-base);
+  border-width: 0 0.25rem 0.25rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.form-container button {
+.check::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-container input:checked ~ .check:after{
+  display: block;
+}
+
+#page-singin-content .login-helper .remember-password {
+  display: flex;
+}
+
+#page-singin-content .login-helper .remember-password p{
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-left: 1.6rem;
+  color: var(--color-text-complement);
+}
+
+#page-singin-content .login-helper a{
+  font: 400 1.4rem Poppins;
+  line-height: 2.4rem;
+  text-decoration: none;
+  color: var(--color-text-complement);
+}
+
+#page-singin-content .form-page-content form > button {
   height: 5.6rem;
   width: 100%;
   background: var(--color-button-base);
+  border-radius: 0.8rem;
   border: 0;
   margin-bottom: 12.8rem;
 }
 
-.form-container .singup-linking {
+#page-singin-content .form-page-content .footer-direction {
   display: flex;
   justify-content: space-between;
+}
 
+#page-singin-content .form-page-content .footer-direction {
+  display: flex;
+  justify-content: space-between;
+}
+
+#page-singin-content .form-page-content .footer-direction > div > p{
+    font: 400 1.6rem Poppins;
+    color: #6a6180;
+}
+
+#page-singin-content .form-page-content .footer-direction > div > a{
+  font: 600 1.6rem Poppins;
+  color: var(--color-primary-light);
+}
+
+#page-singin-content .form-page-content .footer-direction > p{
+  color: var(--color-text-complement);
+  display: flex;
+  align-items: center;
+  font: 400 1.4rem Poppins;
+}
+
+#page-singin-content .form-page-content .footer-direction > p > img{
+  padding-left: 0.8rem;  
 }
 
 
